@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    color: purple;
+}
+
+h1 {
+    color: black;
+
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: darkmagenta
+}
+
+/* child selector */
+ul>li {
+    font-weight: bolder;
+}
+
+/* sibling selector */
+h2+p {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 555px
+}
+
+ul li:hover {
+    /* ::before Pseudo-element */
+    color: blueviolet
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+    background-color: white;
+
+
+}
+
+/* ::before Pseudo-element */
+ul li::before {
+    content: "🚀 ";
+}
+
+/* ::after pseudo-element */
+a::after {
+    content: "🌌"
+
+}
+
+/* ::first-letter pseudo element */
+p::first-letter {
+    font-size: 200%;
+    color: brown
+}
